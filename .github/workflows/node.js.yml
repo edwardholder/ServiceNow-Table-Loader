@@ -24,6 +24,6 @@ jobs:
       with:
         node-version: 20
         cache: 'npm'
+        path: https://github.com/actions/setup-node#caching-packages-dependencies
+        cache-dependency-path: "./blog/package-lock.json"
         
-    - run: npm ci
-    - run: npm test
